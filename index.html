@@ -4,8 +4,13 @@
 	<title>Bootstrap Example</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	
 </head>
 <body>
@@ -26,18 +31,34 @@
 					<div class="form-group">
 						<input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email">
 						<input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pwd">
-						<button type="submit" class="btn btn-default">INICIAR SESIÓN</button>
 					</div>
-					<p id="forget">¿Olvidaste tu contraseña?</p>
-					<h5 id="sinCuenta">¿NO TIENES CUENTA? <a href="#" id="resgistrate">REGÍSTRATE</a></h5>
+					<div class="row">
+						<div class="col-xs col-sm-12 col-md-12 col-lg-12 logo text-left">
+							<button type="submit" class="btn btn-default">INICIAR SESIÓN</button>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs col-sm-12 col-md-12 col-lg-12 logo text-left">
+							<p id="forget">¿Olvidaste tu contraseña?</p>
+						</div>
+					</div>
+					
 					
 				</form>
 			</div>
 		</div>
-
 	</div>
 
+	<!--FOOTER-->
+	<footer>
+		<div class="row">
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 footer text-center">
+				<h5 id="sinCuenta">¿NO TIENES CUENTA? <a href="#" id="resgistrate">REGÍSTRATE</a></h5>
+			</div>
+		</div>
 
+	</footer>
 	<!-- Bootstrap Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	

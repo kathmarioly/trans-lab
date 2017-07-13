@@ -1,7 +1,54 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
+	border: 0;
 	background-color: #404143;
+	font-family: 'Roboto', sans-serif;
 
 }
 
+/*INDEX INICIO*/
+.logo-titulo{
+	padding: 20px;
+	text-align: center;
+	color: #FCAD00;
+}
+
+.logo img{
+	max-width: 100%;
+	width: 25%;
+	height: auto;
+}
+
+p, h5 {
+	color: whitesmoke;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+footer{
+	padding: 30px;
+	top: 25px;
+}
+#resgistrate{
+	color: #FCAD00;
+}
+
+.formulario{
+	text-align: center;
+	
+}
+.form{
+	text-align: center;
+}
+.form input, .form button, p{
+	width: 83%;
+	margin: auto;
+	display: block;
+}
+.form button{
+	background-color: #FCAD00;
+	margin: auto;
+}
+
+/*INDEX INICIO*/
