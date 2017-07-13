@@ -1,12 +1,49 @@
-<!-- Wowowoyipiyouuu tu código acá -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>TransLab</title>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 </head>
 <body>
+
+	<div class="container-fluid logo-titulo">
+		<div class="row">
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 logo">
+				<img src="docs/imagen.png" alt="logo">
+				<h1>TRANS-LAB</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid formulario">
+		<div class="row">
+			<div class="col-xs col-sm-12 col-md-12 col-lg-12 form">
+				<form action="opciones-app.html">
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email">
+						<input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pwd">
+						<button type="submit" class="btn btn-default">INICIAR SESIÓN</button>
+					</div>
+					<p id="forget">¿Olvidaste tu contraseña?</p>
+					<h5 id="sinCuenta">¿NO TIENES CUENTA? <a href="#" id="resgistrate">REGÍSTRATE</a></h5>
+					
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Bootstrap Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
