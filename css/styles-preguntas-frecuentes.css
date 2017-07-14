@@ -275,26 +275,11 @@ html { height: 100%;}
 
 
 /*Perfil*/
-.logo-user {
+.logo-titulo {
   background-color: #FCAD00;
   padding: 20px;
   text-align: center;
-  color: #FCAD00;
+  color: whitesmoke;
 }
 
-.logo img{
-  max-width: 100%;
-  width: 40%;
-  height: auto;
-}
 
-#tarjeta-numero{
-
-  border-bottom: 2px solid black;
-  background-color: transparent;
-}
-
-.row #tarjeta-numero{
-  border-color: transparent;
-
-}
