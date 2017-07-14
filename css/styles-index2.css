@@ -94,7 +94,7 @@ html { height: 100%;}
 }
 .sidebar-nav li:first-child a {
   color: #fff;
-  background-color: #1a1a1a;
+  background-color: whitesmoke;
 }
 .sidebar-nav li:nth-child(2):before {
   background-color: #ec1b5a;   
@@ -278,9 +278,7 @@ html { height: 100%;}
   -webkit-transition: all .35s ease-in-out;
 }
 
-/*-------------------------------*/
-/*            Overlay            */
-/*-------------------------------*/
+/*overlay*/
 
 .overlay {
   position: fixed;
@@ -296,7 +294,15 @@ html { height: 100%;}
 }
 
 
+.sidebar-nav, .glyphicon{
+  color: #FCAD00;
+}
 
 
+.container button{
+  background-color: #FCAD00;
+}
 
-
+.container button:hover{
+  background-color: #1A1A1A;
+}
