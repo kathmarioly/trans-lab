@@ -298,3 +298,9 @@ html { height: 100%;}
   border-color: transparent;
 
 }
+
+.form-calcular{
+  display: inline-block;
+  max-width: 100%
+
+}
