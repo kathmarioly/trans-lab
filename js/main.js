@@ -1,38 +1,27 @@
-
-
-
-
-
-/*index 2*/
-
-
 $(document).ready(function () {
-	var trigger = $('.hamburger'),
-	overlay = $('.overlay'),
-	isClosed = false;
+	$(".form-group").validate({
+		rules: {
+			email: { 
+				required: true,
+				minlength: 8,
+				maxlength: 10,
 
-	trigger.click(function () {
-		hamburger_cross();      
-	});
+			} , 
 
-	function hamburger_cross() {
+			pwd: { 
+				equalTo: "#pwd",
+				minlength: 6,
+				maxlength: 10
+			}
 
-		if (isClosed == true) {          
-			overlay.hide();
-			trigger.removeClass('is-open');
-			trigger.addClass('is-closed');
-			isClosed = false;
-		} else {   
-			overlay.show();
-			trigger.removeClass('is-closed');
-			trigger.addClass('is-open');
-			isClosed = true;
+
+		},
+		messages:{
+			pwd: { 
+				required:"La contraseña es requerida"
+
+			}
 		}
-	}
 
-	$('[data-toggle="offcanvas"]').click(function () {
-		$('#wrapper').toggleClass('toggled');
-	});  
-});
-
-/*FIn index 2*/
+	});
+}
