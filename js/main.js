@@ -1,27 +1,48 @@
-$(document).ready(function () {
-	$(".form-group").validate({
-		rules: {
-			email: { 
-				required: true,
-				minlength: 8,
-				maxlength: 10,
 
-			} , 
+$('.form-group').bootstrapValidator({
 
-			pwd: { 
-				equalTo: "#pwd",
-				minlength: 6,
-				maxlength: 10
+	message: 'Este valor no es valido',
+
+	feedbackIcons: {
+
+		valid: 'glyphicon glyphicon-ok',
+
+		invalid: 'glyphicon glyphicon-remove',
+
+		validating: 'glyphicon glyphicon-refresh'
+
+	},
+
+	fields: {
+
+		usuario: {
+
+			validators: {
+
+				notEmpty: {
+
+					message: 'El nombre de usuario es requerido'
+
+				}
+
 			}
-
 
 		},
-		messages:{
-			pwd: { 
-				required:"La contraseña es requerida"
+
+		password: {
+
+			validators: {
+
+				notEmpty: {
+
+					message: 'La contraseña es requerida'
+
+				}
 
 			}
+
 		}
 
-	});
-}
+	}
+
+});

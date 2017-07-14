@@ -6,7 +6,7 @@
 	<meta name=""><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Latest compiled and minified CSS -->
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/styles-opcion-ver-saldo.css">
+	<link rel="stylesheet" type="text/css" href="css/styles-calcular-saldo.css">
 </head>
 <body>
 
@@ -59,47 +59,78 @@
 
 	<!--section tarjet-->
 	
+	<section >
+		<div class="container">
+			<div class="row">
+				<div class="col-xs col-sm-12 col-md-12 col-lg-12 form">
+					<form action="opciones-app.html">
+						<div class="form-group">
+							<input type="numero" class="form-control" id="tarjeta-numero" placeholder="Numero Tarjeta" name="tarjeta">
+						</div>
+					</form>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="form-inline" id="tarifa" class="select-inline">
+							<label for="sel1">Tarifa</label>
+							<select class="form-calcular" id="sel1">
+								<option>Choose your option</option>
+								<option>Choose your option</option>
+								<option>Choose your option</option>
+								<option>Choose your option</option>
+							</select>
+						</div></div>
+					</div>
+					<div class="col-xs-6">
+						<div class="form-group">
+							<label id="tarjeta-calcular" for="sel1">Tarjeta</label>
+							<select class="form-calcular" >
+								<option>Choose your option</option>
+								<option>Choose your option</option>
+								<option>Choose your option</option>
+								<option>Choose your option</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<div class="container-fluid formulario">
 		<div class="row">
 			<div class="col-xs col-sm-12 col-md-12 col-lg-12 form">
 				<form action="opciones-app.html">
 					<div class="form-group">
-						<input type="numero" class="form-control" id="tarjeta-numero" placeholder="Numero Tarjeta" name="tarjeta">
+						<button type="button" class="btn btn-warning btn-block" id="tarjeta">CALCULAR</button>
 					</div>
 				</form>
 			</div>
-
 		</div>
-
-
-		<div class="container-fluid formulario">
-			<div class="row">
-				<div class="col-xs col-sm-12 col-md-12 col-lg-12 form">
-					<form action="opciones-app.html">
-						<div class="form-group">
-							<button type="button" class="btn btn-warning btn-block" id="tarjeta">VER SALDO</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-
 	</div>
 
-	<!-- /#page-content-wrapper -->
-
-
-	<!-- /#wrapper -->
+</div>
 
 
 
-	<!--script-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- /#page-content-wrapper -->
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!--Enlazado con mi js-->
-	<script type="text/javascript" src="js/main-2.js"></script>
+<!-- /#wrapper -->
+
+
+
+<!--script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--Enlazado con mi js-->
+<script type="text/javascript" src="js/main-2.js"></script>
 </body>
 </html>

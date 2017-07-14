@@ -52,3 +52,9 @@ footer{
 }
 
 /*INDEX INICIO*/
+.errores{
+	display: none;
+	position: absolute;
+	color: whitesmoke;
+	background-color: #FCAD00;
+}
