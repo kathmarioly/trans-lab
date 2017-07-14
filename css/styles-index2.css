@@ -1,17 +1,14 @@
 body {
   position: relative;
-  overflow-x: hidden;
 }
 body,
 html { height: 100%;}
 .nav .open > a, 
 .nav .open > a:hover, 
 .nav .open > a:focus {background-color: transparent;}
-
 /*-------------------------------*/
 /*           Wrappers            */
 /*-------------------------------*/
-
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -19,11 +16,9 @@ html { height: 100%;}
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
   padding-left: 220px;
 }
-
 #sidebar-wrapper {
   z-index: 1000;
   left: 220px;
@@ -32,35 +27,32 @@ html { height: 100%;}
   margin-left: -220px;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #1a1a1a;
+  background: white;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 #sidebar-wrapper::-webkit-scrollbar {
   display: none;
 }
-
 #wrapper.toggled #sidebar-wrapper {
   width: 220px;
 }
-
 #page-content-wrapper {
   width: 100%;
   padding-top: 70px;
+  background-color: #616161;
+  margin: 0 auto;
+  
 }
-
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
   margin-right: -220px;
 }
-
 /*-------------------------------*/
 /*     Sidebar nav styles        */
 /*-------------------------------*/
-
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -69,14 +61,12 @@ html { height: 100%;}
   padding: 0;
   list-style: none;
 }
-
 .sidebar-nav li {
   position: relative; 
   line-height: 20px;
   display: inline-block;
   width: 100%;
 }
-
 .sidebar-nav li:before {
   content: '';
   position: absolute;
@@ -90,35 +80,6 @@ html { height: 100%;}
   -moz-transition:  width .2s ease-in;
   -ms-transition:  width .2s ease-in;
   transition: width .2s ease-in;
-
-}
-.sidebar-nav li:first-child a {
-  color: #fff;
-  background-color: whitesmoke;
-}
-.sidebar-nav li:nth-child(2):before {
-  background-color: #ec1b5a;   
-}
-.sidebar-nav li:nth-child(3):before {
-  background-color: #79aefe;   
-}
-.sidebar-nav li:nth-child(4):before {
-  background-color: #314190;   
-}
-.sidebar-nav li:nth-child(5):before {
-  background-color: #279636;   
-}
-.sidebar-nav li:nth-child(6):before {
-  background-color: #7d5d81;   
-}
-.sidebar-nav li:nth-child(7):before {
-  background-color: #ead24c;   
-}
-.sidebar-nav li:nth-child(8):before {
-  background-color: #2d2366;   
-}
-.sidebar-nav li:nth-child(9):before {
-  background-color: #35acdf;   
 }
 .sidebar-nav li:hover:before,
 .sidebar-nav li.open:hover:before {
@@ -127,16 +88,13 @@ html { height: 100%;}
   -moz-transition:  width .2s ease-in;
   -ms-transition:  width .2s ease-in;
   transition: width .2s ease-in;
-
 }
-
 .sidebar-nav li a {
   display: block;
-  color: #ddd;
+  color: black;
   text-decoration: none;
   padding: 10px 15px 10px 30px;    
 }
-
 .sidebar-nav li a:hover,
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus,
@@ -147,7 +105,6 @@ html { height: 100%;}
   text-decoration: none;
   background-color: transparent;
 }
-
 .sidebar-nav > .sidebar-brand {
   height: 65px;
   font-size: 20px;
@@ -163,11 +120,9 @@ html { height: 100%;}
   background-color: #222;
   box-shadow: none;
 }
-
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
-
 .hamburger {
   position: fixed;
   top: 20px;  
@@ -175,15 +130,18 @@ html { height: 100%;}
   display: block;
   width: 32px;
   height: 32px;
-  margin-left: 15px;
+  margin-left: 28px;
   background: transparent;
   border: none;
+
 }
 .hamburger:hover,
 .hamburger:focus,
 .hamburger:active {
   outline: none;
 }
+
+
 .hamburger.is-closed:before {
   content: '';
   display: block;
@@ -202,7 +160,6 @@ html { height: 100%;}
   -webkit-transform: translate3d(-100px,0,0);
   -webkit-transition: all .35s ease-in-out;
 }
-
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom,
@@ -217,7 +174,7 @@ html { height: 100%;}
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
-  background-color: #1a1a1a;
+  background-color: white;
 }
 .hamburger.is-closed .hamb-top { 
   top: 5px; 
@@ -231,7 +188,6 @@ html { height: 100%;}
   bottom: 5px;  
   -webkit-transition: all .35s ease-in-out;
 }
-
 .hamburger.is-closed:hover .hamb-top {
   top: 0;
   -webkit-transition: all .35s ease-in-out;
@@ -277,9 +233,7 @@ html { height: 100%;}
   -webkit-transform: translate3d(-100px,0,0);
   -webkit-transition: all .35s ease-in-out;
 }
-
 /*overlay*/
-
 .overlay {
   position: fixed;
   display: none;
@@ -292,17 +246,39 @@ html { height: 100%;}
   background-color: rgba(250,250,250,.8);
   z-index: 1;
 }
-
-
 .sidebar-nav, .glyphicon{
   color: #FCAD00;
 }
 
-
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
 .container button{
   background-color: #FCAD00;
 }
-
 .container button:hover{
-  background-color: #1A1A1A;
+}
+
+.container button {
+  background-color: transparent;
+
+}
+.row {
+
+  padding: 90px 2px 17px 2px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.btn-primary{
+  background-color: #FCAD00;
+  border-color: transparent;
+  border-radius: 0px;
+}
+
+.btn-primary:hover{
+  background-color: #404143;
+
 }
